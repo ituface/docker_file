@@ -31,7 +31,7 @@ RUN localedef -c -f UTF-8 -i zh_CN zh_CN.utf8
 #设置环境变量
 ENV LC_ALL zh_CN.UTF-8
 #从git中下载
-RUN cd /usr/src/myapp && git clone  https://ituface:ye115566@gitee.com/ituface/itufaceapi.git
+RUN cd /usr/src/myapp && git clone  xxxx #git 地址
 
 EXPOSE 8883
 CMD ["python3","./manage.py","runserver","0.0.0.0:8883"]
